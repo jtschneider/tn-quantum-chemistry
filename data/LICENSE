@@ -1,0 +1,36 @@
+# Licence for the datasets in this directory
+
+The calculation records, processed results and reference values under `data/`
+are licensed under the **Creative Commons Attribution 4.0 International**
+licence (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
+
+You may share and adapt them for any purpose, including commercially, provided
+you give appropriate credit, link to the licence, and indicate if changes were
+made.
+
+The source code in this repository is licensed separately, under the MIT
+licence; see the `LICENSE` file at the repository root.
+
+## Third-party data redistributed here
+
+`reference/motta_h10_obc_sto6g.json` is derived from the Simons Collaboration
+hydrogen-chain benchmark and is redistributed under its own CC BY 4.0 licence:
+
+> M. Motta *et al.* (Simons Collaboration on the Many-Electron Problem),
+> *Phys. Rev. X* **7**, 031059 (2017), doi:10.1103/PhysRevX.7.031059.
+> Data: https://github.com/simonsfoundation/hydrogen-benchmark-PRX, CC BY 4.0.
+
+That attribution is also carried inside the file itself.
+
+`reference/n2_ccpvdz_external.json` contains numerical values transcribed from
+the published tables of three papers, each cited inside the file. Individual
+numerical results are facts rather than creative works, no licence is claimed
+over them, and they are re-derivable by anyone running the same calculation.
+The papers themselves are not redistributed.
+
+## Provenance metadata
+
+Every record carries the software versions, host and platform it was produced
+on, so that a result can be traced to the machine that generated it. The
+hostname is that of a personal workstation and is retained deliberately: it is
+what makes the provenance chain complete.

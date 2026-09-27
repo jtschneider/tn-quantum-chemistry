@@ -1,0 +1,52 @@
+basis,bond_length_angstrom,method,reference_type,n_frozen_core,status,e_total_hartree,error_vs_fci_kcal_per_mol,spin_squared,nevpt2_correction_hartree,active_natural_occupations,walltime_seconds
+cc-pvdz,1.098,RHF,RHF,0,converged,-108.95408661,,0.000000,,,0.03
+cc-pvdz,1.098,UHF,UHF,0,converged,-108.95408661,,-0.000000,,,0.06
+cc-pvdz,1.098,MP2,RHF,2,converged,-109.26047403,,,,,0.03
+cc-pvdz,1.098,CCSD,RHF,2,converged,-109.26341781,,,,,0.13
+cc-pvdz,1.098,CCSD(T),RHF,2,converged,-109.27528807,,,,,0.17
+cc-pvdz,1.098,"CASCI(10e,8o)",RHF,2,converged,-109.03440703,,,,1.998 1.995 1.989 1.950 1.950 0.058 0.058 0.003,0.07
+cc-pvdz,1.098,"CASSCF(10e,8o)",CASSCF,2,converged,-109.10265092,,,,1.996 1.990 1.982 1.941 1.941 0.065 0.065 0.019,0.56
+cc-pvdz,1.098,"NEVPT2/CASSCF(10e,8o)",CASSCF,2,converged,-109.24897391,,,-0.146323,,0.97
+cc-pvdz,1.600,RHF,RHF,0,converged,-108.59637333,,0.000000,,,0.02
+cc-pvdz,1.600,UHF,UHF,0,converged,-108.78775709,,1.933916,,,0.11
+cc-pvdz,1.600,MP2,RHF,2,converged,-109.13291396,,,,,0.02
+cc-pvdz,1.600,CCSD,RHF,2,converged,-109.03472839,,,,,0.15
+cc-pvdz,1.600,CCSD(T),RHF,2,converged,-109.07321764,,,,,0.18
+cc-pvdz,1.600,"CASCI(10e,8o)",RHF,2,converged,-108.85298526,,,,1.994 1.989 1.925 1.754 1.754 0.253 0.253 0.079,0.07
+cc-pvdz,1.600,"CASSCF(10e,8o)",CASSCF,2,converged,-108.89572181,,,,1.994 1.988 1.910 1.752 1.752 0.255 0.255 0.095,0.44
+cc-pvdz,1.600,"NEVPT2/CASSCF(10e,8o)",CASSCF,2,converged,-109.05160503,,,-0.155883,,0.85
+cc-pvdz,2.400,RHF,RHF,0,converged,-108.15351020,,0.000000,,,0.02
+cc-pvdz,2.400,UHF,UHF,0,converged,-108.77833602,,2.947046,,,0.11
+cc-pvdz,2.400,MP2,RHF,2,converged,-109.38558542,,,,,0.02
+cc-pvdz,2.400,CCSD,RHF,2,not_converged,-108.62599482,,,,,1.10
+cc-pvdz,2.400,CCSD(T),RHF,2,not_converged,-109.09993889,,,,,1.13
+cc-pvdz,2.400,"CASCI(10e,8o)",RHF,2,converged,-108.74148581,,,,2.000 1.998 1.360 1.106 1.106 0.894 0.894 0.641,0.11
+cc-pvdz,2.400,"CASSCF(10e,8o)",CASSCF,2,converged,-108.77904288,,,,2.000 1.999 1.338 1.097 1.097 0.903 0.903 0.663,1.64
+cc-pvdz,2.400,"NEVPT2/CASSCF(10e,8o)",CASSCF,2,converged,-108.92943469,,,-0.150392,,2.06
+sto-3g,1.098,RHF,RHF,0,converged,-107.49597503,98.535,0.000000,,,0.01
+sto-3g,1.098,UHF,UHF,0,converged,-107.49597503,98.535,0.000000,,,0.02
+sto-3g,1.098,MP2,RHF,2,converged,-107.64975797,2.034,,,,0.01
+sto-3g,1.098,CCSD,RHF,2,converged,-107.64881269,2.627,,,,0.04
+sto-3g,1.098,CCSD(T),RHF,2,converged,-107.65052654,1.552,,,,0.04
+sto-3g,1.098,"CASCI(10e,8o)",RHF,2,converged,-107.65270379,0.186,,,1.995 1.987 1.982 1.932 1.932 0.077 0.077 0.019,0.06
+sto-3g,1.098,"CASSCF(10e,8o)",CASSCF,2,converged,-107.65286983,0.082,,,1.995 1.987 1.982 1.932 1.932 0.077 0.077 0.019,0.25
+sto-3g,1.098,"NEVPT2/CASSCF(10e,8o)",CASSCF,2,converged,-107.65299775,0.001,,-0.000128,,0.63
+sto-3g,1.098,FCI,RHF,0,converged,-107.65299988,0.000,,,,0.18
+sto-3g,1.600,RHF,RHF,0,converged,-107.18484646,224.171,0.000000,,,0.01
+sto-3g,1.600,UHF,UHF,0,converged,-107.44518787,60.804,2.032926,,,0.04
+sto-3g,1.600,MP2,RHF,2,converged,-107.64347787,-63.625,,,,0.01
+sto-3g,1.600,CCSD,RHF,2,converged,-107.52923191,8.066,,,,0.05
+sto-3g,1.600,CCSD(T),RHF,2,converged,-107.53222624,6.187,,,,0.06
+sto-3g,1.600,"CASCI(10e,8o)",RHF,2,converged,-107.54196184,0.078,,,1.995 1.990 1.903 1.649 1.649 0.356 0.356 0.102,0.08
+sto-3g,1.600,"CASSCF(10e,8o)",CASSCF,2,converged,-107.54205342,0.020,,,1.995 1.990 1.903 1.649 1.649 0.356 0.356 0.102,0.32
+sto-3g,1.600,"NEVPT2/CASSCF(10e,8o)",CASSCF,2,converged,-107.54208567,0.000,,-0.000032,,0.70
+sto-3g,1.600,FCI,RHF,0,converged,-107.54208577,0.000,,,,0.24
+sto-3g,2.400,RHF,RHF,0,converged,-106.65660805,492.406,0.000000,,,0.01
+sto-3g,2.400,UHF,UHF,0,converged,-107.43706335,2.662,2.959692,,,0.04
+sto-3g,2.400,MP2,RHF,2,converged,-108.15106414,-445.380,,,,0.01
+sto-3g,2.400,CCSD,RHF,2,not_converged,-107.03466287,255.173,,,,0.27
+sto-3g,2.400,CCSD(T),RHF,2,not_converged,-107.03895753,252.478,,,,0.27
+sto-3g,2.400,"CASCI(10e,8o)",RHF,2,converged,-107.44129583,0.007,,,2.000 1.999 1.270 1.055 1.055 0.945 0.945 0.731,0.09
+sto-3g,2.400,"CASSCF(10e,8o)",CASSCF,2,converged,-107.44130433,0.001,,,2.000 1.999 1.270 1.055 1.055 0.945 0.945 0.731,0.63
+sto-3g,2.400,"NEVPT2/CASSCF(10e,8o)",CASSCF,2,converged,-107.44130625,0.000,,-0.000002,,1.01
+sto-3g,2.400,FCI,RHF,0,converged,-107.44130629,0.000,,,,0.39

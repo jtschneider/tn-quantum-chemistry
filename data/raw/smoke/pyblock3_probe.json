@@ -1,0 +1,67 @@
+{
+  "report": "day1_pyblock3_fallback_probe",
+  "verdict": "unavailable",
+  "usable_as_fallback": false,
+  "probe_python": "3.13",
+  "probe_index": "https://block-hczhai.github.io/pyblock3-preview/pypi/",
+  "project_python": "3.14.7",
+  "installs_on_project_python": false,
+  "workarounds_attempted": [
+    {
+      "workaround": "constrain the probe environment to mkl==2024.2.2",
+      "outcome": "rejected: the constraint pushes resolution off the 0.2.9rc6 wheel onto the 0.2.9rc5 sdist, whose cmake build fails"
+    },
+    {
+      "workaround": "supply libmkl_def.so.1 from mkl==2021.4.0 via LD_LIBRARY_PATH",
+      "outcome": "no effect: MKL dlopens the file by absolute path inside the wheel's own pyblock3.libs/ directory"
+    },
+    {
+      "workaround": "copy libmkl_def.so.1 into the cached wheel's pyblock3.libs/",
+      "outcome": "not attempted: mutating uv's shared package cache and mixing MKL builds is not a reproducible fallback"
+    }
+  ],
+  "installs_on_project_python_note": "pyblock3 publishes no cp314 wheel and its sdist build fails on Python 3.14; the preview channel publishes wheels up to cp313. Probed in a disposable environment per the environment policy; uv.lock is untouched.",
+  "system": {
+    "n_atoms": 8,
+    "spacing_bohr": 1.8,
+    "basis": "sto-6g",
+    "e_hf": -4.221479372066909,
+    "e_nuclear_repulsion": 7.634920634920636,
+    "n_orbitals": 8,
+    "n_electrons": 8
+  },
+  "reference": {
+    "method": "PySCF FCI from the same FCIDUMP",
+    "e_fci": -4.3450794026653625,
+    "walltime_seconds": 0.09713692701188847
+  },
+  "pyblock3": {
+    "command": "uv run --no-project --isolated --python 3.13 --index https://block-hczhai.github.io/pyblock3-preview/pypi/ --with pyblock3 --with numpy>=2 python <snippet> <fcidump> c1",
+    "returncode": 2,
+    "total_walltime_seconds": 0.16014746799191926,
+    "ok": false,
+    "error": "process died before returning a JSON payload",
+    "stdout_tail": "QC MPO site   0 / 8\nINTEL MKL ERROR: /home/jan/.cache/uv/archive-v0/-UPkLXpgZ0ChxGQn/lib/python3.13/site-packages/pyblock3.libs/libmkl_def.so.1: cannot open shared object file: No such file or directory.\nIntel MKL FATAL ERROR: Cannot load libmkl_def.so.1.\n",
+    "stderr_tail": "",
+    "failure_mode": "bundled_mkl_incomplete",
+    "diagnosis": "The pyblock3 wheel bundles Intel MKL 1.x in pyblock3.libs/ but omits libmkl_def.so.1, the generic kernel library MKL's dispatcher always dlopens at initialisation. MKL resolves it by absolute path inside the wheel's own library directory, so supplying the missing file elsewhere on LD_LIBRARY_PATH does not help. The MPO build reaches site 0 and the process is then killed by MKL, which is a native fatal error rather than a Python exception."
+  },
+  "discrepancy_hartree": null,
+  "tolerance": 1e-06,
+  "software": {
+    "timestamp_utc": "2026-09-02T16:41:20+00:00",
+    "python": "3.14.7",
+    "platform": "Linux-7.2.2-1-cachyos-x86_64-with-glibc2.44",
+    "hostname": "cachyos-x8664",
+    "cpu_count": 32,
+    "packages": {
+      "pyscf": "2.14.0",
+      "block2": "0.5.4rc16",
+      "jax": "0.11.1",
+      "numpy": "2.5.2",
+      "scipy": "1.18.1",
+      "quimb": "1.15.0",
+      "tblite": "0.7.0"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+# Private working material. Not part of the published project.
+/notes/
+/old/
+/AGENTS.md
+/PROJECT-APPLICATION-SPRINT.md
+/jn.md
+
+# Python
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Environments and tool caches
+.venv
+.ruff_cache/
+.pytest_cache/
+
+# macOS
+.DS_Store

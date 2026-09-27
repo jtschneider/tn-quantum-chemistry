@@ -1,0 +1,75 @@
+{
+  "report": "day1_smoke_test",
+  "system": "H2O_equilibrium",
+  "basis": "sto-3g",
+  "all_passed": true,
+  "checks": {
+    "pyscf": {
+      "passed": true,
+      "methods": [
+        "RHF",
+        "MP2",
+        "CCSD",
+        "CCSD(T)",
+        "FCI"
+      ]
+    },
+    "block2": {
+      "passed": true,
+      "fci_discrepancy": -7.105427357601002e-14
+    },
+    "tblite": {
+      "passed": true,
+      "method": "GFN2-xTB",
+      "energy_hartree": -5.070372574156141
+    },
+    "jax": {
+      "check": "jax_grad_vs_central_difference",
+      "x64_enabled": true,
+      "backend": "cpu",
+      "devices": [
+        "cpu:0"
+      ],
+      "test_function": "Morse potential, D_e=0.1745, alpha=1.0271, r_e=1.4011 (a.u.)",
+      "finite_difference_step": 1e-05,
+      "points": [
+        1.0,
+        1.4011,
+        2.0,
+        3.0
+      ],
+      "analytic_force": [
+        0.2758955579357598,
+        -0.0,
+        -0.08902446527114598,
+        -0.05595066044634621
+      ],
+      "numeric_force": [
+        0.27589555798325505,
+        1.8907489743131392e-11,
+        -0.08902446526799777,
+        -0.05595066044708496
+      ],
+      "max_abs_error": 4.7495229971161734e-11,
+      "tolerance": 1e-07,
+      "passed": true
+    }
+  },
+  "hardware_id": "cachyos-x8664/x86_64/32cpu",
+  "software": {
+    "timestamp_utc": "2026-09-07T08:41:08+00:00",
+    "python": "3.14.7",
+    "platform": "Linux-7.2.3-1-cachyos-x86_64-with-glibc2.44",
+    "hostname": "cachyos-x8664",
+    "cpu_count": 32,
+    "packages": {
+      "pyscf": "2.14.0",
+      "block2": "0.5.4rc16",
+      "jax": "0.11.1",
+      "numpy": "2.5.2",
+      "scipy": "1.18.1",
+      "quimb": "1.15.0",
+      "tblite": "0.7.0"
+    }
+  }
+}

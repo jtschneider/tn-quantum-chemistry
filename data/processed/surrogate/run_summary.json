@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0.0",
+  "n_geometries": 77,
+  "basis": "sto-3g",
+  "target_method": "FCI",
+  "baseline_method": "RHF",
+  "train_sizes": [
+    8,
+    12,
+    16,
+    24,
+    32,
+    40,
+    50,
+    62
+  ],
+  "model_seeds": [
+    0,
+    1,
+    2
+  ],
+  "train_steps": 80000,
+  "test_fraction": 0.2,
+  "blocked_R": [
+    [
+      1.0,
+      1.2
+    ],
+    [
+      1.8,
+      2.0
+    ],
+    [
+      2.8,
+      3.0
+    ]
+  ],
+  "rows_written": 512,
+  "wall_seconds": 774.9779335960047,
+  "label_cost_seconds": {
+    "target_total": 225.59619541891152,
+    "target_mean_per_point": 2.9298207197261235,
+    "baseline_total": 5.158409031893825,
+    "baseline_mean_per_point": 0.0669923250895302
+  },
+  "gradient_check": {
+    "max_abs_deviation": 3.564215067530796e-08,
+    "max_rel_deviation": 3.183353309407682e-06,
+    "finite_difference_step": 0.0001,
+    "n_points": 77
+  },
+  "hardware_id": "cachyos-x8664/x86_64/32cpu",
+  "software": {
+    "timestamp_utc": "2026-09-07T11:12:41+00:00",
+    "python": "3.14.7",
+    "platform": "Linux-7.2.3-1-cachyos-x86_64-with-glibc2.44",
+    "hostname": "cachyos-x8664",
+    "cpu_count": 32,
+    "packages": {
+      "pyscf": "2.14.0",
+      "block2": "0.5.4rc16",
+      "jax": "0.11.1",
+      "numpy": "2.5.2",
+      "scipy": "1.18.1",
+      "quimb": "1.15.0",
+      "tblite": "0.7.0"
+    }
+  }
+}

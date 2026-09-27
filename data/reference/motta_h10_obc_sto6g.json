@@ -1,0 +1,102 @@
+{
+  "citation": "M. Motta et al. (Simons Collaboration on the Many-Electron Problem), Phys. Rev. X 7, 031059 (2017), doi:10.1103/PhysRevX.7.031059. Data: https://github.com/simonsfoundation/hydrogen-benchmark-PRX, CC BY 4.0.",
+  "license": "CC BY 4.0",
+  "source_repository": "simonsfoundation/hydrogen-benchmark-PRX",
+  "system": "H10 linear chain, open boundary conditions",
+  "basis": "STO-6G",
+  "basis_note": "The repository labels this 'basis-STO'. It is STO-6G: recomputing these geometries in STO-6G reproduces the published FCI energies to a few times 1e-9 Ha, while STO-3G differs by 3.6-6.6e-2 Ha.",
+  "spacing_unit": "Bohr",
+  "spacing_note": "The repository does not state units. Bohr is established by the same reproduction; interpreting R as Angstrom does not reproduce any published value.",
+  "energy_unit": "Hartree",
+  "published_decimals": {
+    "RHF": 10,
+    "UHF": 11,
+    "CCSD": 6,
+    "CCSD(T)": 6,
+    "FCI": 8,
+    "DMRG": 6
+  },
+  "retrieved_utc": "2026-09-03T19:55:20+00:00",
+  "energies": {
+    "1.0": {
+      "RHF": -3.7517377679,
+      "UHF": -3.75174039816,
+      "CCSD": -3.823874,
+      "CCSD(T)": -3.82432,
+      "FCI": -3.82438855,
+      "DMRG": -3.824388
+    },
+    "1.2": {
+      "RHF": -4.6780538309,
+      "UHF": -4.67805530591,
+      "CCSD": -4.765611,
+      "CCSD(T)": -4.766261,
+      "FCI": -4.76637768,
+      "DMRG": -4.766378
+    },
+    "1.4": {
+      "RHF": -5.0986187791,
+      "UHF": -5.09861951096,
+      "CCSD": -5.204019,
+      "CCSD(T)": -5.20492,
+      "FCI": -5.20509413,
+      "DMRG": -5.205094
+    },
+    "1.6": {
+      "RHF": -5.2562813583,
+      "UHF": -5.25628158765,
+      "CCSD": -5.382921,
+      "CCSD(T)": -5.384141,
+      "FCI": -5.38436107,
+      "DMRG": -5.384361
+    },
+    "1.8": {
+      "RHF": -5.2701429637,
+      "UHF": -5.27744870209,
+      "CCSD": -5.422549,
+      "CCSD(T)": -5.424188,
+      "FCI": -5.42438538,
+      "DMRG": -5.424385
+    },
+    "2.0": {
+      "RHF": -5.2034704915,
+      "UHF": -5.23136518718,
+      "CCSD": -5.387457,
+      "CCSD(T)": -5.389665,
+      "FCI": -5.38962588,
+      "DMRG": -5.389626
+    },
+    "2.4": {
+      "RHF": -4.9560570889,
+      "UHF": -5.06570927043,
+      "CCSD": -5.226815,
+      "CCSD(T)": -5.230888,
+      "FCI": -5.22793649,
+      "DMRG": -5.227936
+    },
+    "2.8": {
+      "RHF": -4.6584287534,
+      "UHF": -4.91182602506,
+      "CCSD": -5.067298,
+      "CCSD(T)": -5.074866,
+      "FCI": -5.05024496,
+      "DMRG": -5.050244
+    },
+    "3.2": {
+      "RHF": -4.3667944202,
+      "UHF": -4.81323446318,
+      "CCSD": -5.900768,
+      "CCSD(T)": -5.926833,
+      "FCI": -4.91038288,
+      "DMRG": -4.910381
+    },
+    "3.6": {
+      "RHF": -4.1049328529,
+      "UHF": -4.76034668628,
+      "CCSD": -6.644594,
+      "CCSD(T)": -6.682346,
+      "FCI": -4.81870081,
+      "DMRG": -4.818699
+    }
+  }
+}

@@ -1,0 +1,47 @@
+[project]
+name = "tn-quantum-chemistry"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Jan Schneider", email = "9451057+jtschneider@users.noreply.github.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "block2>=0.5.4rc16",
+    "intel-openmp>=2026.1.1",
+    "jax>=0.11.1",
+    "matplotlib>=3.11.1",
+    "mkl<=2024.2.2",
+    "mkl-include>=2026.1.0",
+    "pandas>=3.0.5",
+    "pyscf>=2.14.0",
+    "quimb>=1.15.0",
+    "scikit-learn>=1.9.0",
+    "tblite>=0.7.0",
+]
+
+[project.scripts]
+tn-quantum-chemistry = "tn_quantum_chemistry:main"
+
+[build-system]
+requires = ["uv_build>=0.12.8,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv.sources]
+block2 = { index = "block2-preview" }
+
+[[tool.uv.index]]
+name = "block2-preview"
+url = "https://block-hczhai.github.io/block2-preview/pypi/"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "slow: runs an electronic-structure calculation (deselect with -m 'not slow')",
+]
